@@ -1,4 +1,4 @@
-a = 5
+
 a = gets.chomp.to_i
 answer = case a
 when 5

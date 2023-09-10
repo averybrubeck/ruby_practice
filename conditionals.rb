@@ -1,11 +1,13 @@
-puts "put in a number"
+puts "enter a number"
 number = gets.chomp.to_i
 
-if number == 3
-    puts "a is 3"
+if number < 0
+    puts "fuck off"
+elsif number <= 50
+    puts "#{number} is less than 50"
+elsif number <= 100
+    puts "#{number} is greater than 50"
+elsif number > 100
+    puts "you're a real whore aren't you?"
     
-elsif number == 4
-    puts "a is 4"
-else 
-    puts "a is not 3 or 4"
 end

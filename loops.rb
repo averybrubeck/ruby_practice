@@ -1,3 +1,4 @@
+
 puts "what are you?"
 input = gets.chomp
 

@@ -30,11 +30,19 @@ class MyCar
     def info
         "#{self.year}, #{color}, #{self.make}, #{model} #{speed}"
     end
+
+    def self.gas_milage(gallons, miles)
+        puts "#{miles / gallons} miles per gallon of gas"
+    end
+
+    def to_s
+        "The #{color} #{make} #{model} is going #{speed} miles per hour"
+    end
 end
 
 car = MyCar.new("2006", "red", "Honda", "Civic")
-puts car.info
+puts car
 car.speed_up(12)
-puts car.info
+puts car
 car.brake(6)
-puts car.info
+puts car
